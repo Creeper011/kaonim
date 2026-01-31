@@ -17,6 +17,6 @@ class JokeCog(commands.Cog):
     async def joke_command(self, interaction: discord.Interaction, invisible: bool = False) -> None:
         """Gets info about bot"""
         await interaction.response.defer(thinking=True, ephemeral=invisible)
-        
+
         message = self.joke_service.get_random_joke()
         await interaction.followup.send(message)
