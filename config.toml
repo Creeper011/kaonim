@@ -1,0 +1,7 @@
+[discord]
+prefix = ";?"
+
+[discord.intents]
+guilds = true
+messages = true
+message_content = true

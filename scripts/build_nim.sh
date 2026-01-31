@@ -1,0 +1,1 @@
+nim c --app:lib --out:./lib/ --threads:on --opt:size --cpu:host --passC:-fPIC --path:src/native --path:src/shared src/native/**/*.nim
